@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Coffee Shop Sales Dashboard - Maven Roasters</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel=icon href=images/logo-cristiane-thiel-favicon.png>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Portfólio de Cristiane Thiel</a></h1>
+					</header>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Coffee Shop Sales Dashboard - Maven Roasters</h2>
+								<p style="font-size: 0.9em;">Este projeto teve como objetivo analisar as vendas da rede de cafeterias <b>Maven Roasters</b>, explorando tendências de receita, comportamento dos clientes e desempenho dos produtos. Para isso, foi criado um <b>dashboard interativo em Excel</b>, permitindo a visualização dinâmica dos dados e extração de insights estratégicos para o negócio.
+								<br><br>
+								<a href="https://cury-company-dashboard.streamlit.app/" target="_blank" class="image"><img src="images/coffee-shop-maven-roasters-excel.png" width="880" alt="" /></a>
+								<br><br></p>	
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Processos e Métodos</h3>
+									<p>Para estruturar a análise e construir o dashboard, segui as seguintes etapas:</p>
+										<b>1 - Análise Exploratória de Dados (EDA)</b>
+										<ul>
+											<li>Exploração inicial do dataset para entender o volume de transações e o período analisado.</li>
+											<li>Verificação de tipos de dados, identificação de valores ausentes e inconsistências.</li>
+											<li>Garantia da integridade dos dados antes da análise para evitar distorções nos insights.</li>
+											<li>Análise das variáveis disponíveis para compreender os principais indicadores do negócio.</li>
+										</ul>
+
+										<b>2 - Preparação dos Dados</b>
+										<ul>
+											<li>Tratamento de dados inconsistentes e ajustes nos tipos de variáveis quando necessário.</li>
+											<li>Ajuste de tipos de variáveis para garantir consistência na análise.</li>
+											<li>Tratamento de dados inconsistentes para evitar erros em cálculos e visualizações.</li>
+											<li>Criação de colunas adicionais para facilitar a análise temporal: <strong>Mês, Dia da Semana e Hora da Transação</strong>.</li>
+											<li>Cálculo da <strong>Receita (Preço × Quantidade)</strong> para mensuração do faturamento.</li>
+											<li>Essa etapa assegura que os dados estejam prontos para uma análise confiável e eficaz.</li>
+										</ul>
+
+										<b>3 - Análise Exploratória de Negócio</b>
+										<ul>
+											<li>Uso de Tabelas Dinâmicas para identificar padrões e tendências nos dados.</li>
+											<li>Receita total por mês para observar a tendência de vendas.</li>
+											<li>Número de transações por dia da semana e por horário do dia.</li>
+											<li>Ranking de vendas por categoria de produto e análise dos <strong>15 produtos mais vendidos</strong>.</li>
+											<li>Comparação entre unidades de venda para identificar diferenças regionais no consumo.</li>
+										</ul>
+
+										<b>4 - Desenvolvimento do Dashboard</b>
+										<ul>
+											<li>Construção de gráficos dinâmicos para visualizar o desempenho de vendas ao longo do tempo.</li>
+											<li>Implementação de <strong>filtros interativos (slicers)</strong> para permitir análises personalizadas por localização e tipo de produto.</li>
+											<li>Organização do layout para facilitar a navegação e compreensão dos insights.</li>
+											<li>Estruturação do layout para permitir rápida extração de insights e facilitar a tomada de decisão.</li>
+										</ul>
+									<a href="https://cury-company-dashboard.streamlit.app/" class="special" target="_blank">Acessar Projeto</a>
+									<h3 class="major">Insights Estratégicos e Decisões de Negócio</h3>
+									<p>
+										<ul>
+											<li><strong>Horário de Maior Movimento:</strong> A unidade de Lower Manhattan tem um pico intenso de vendas entre 7h e 10h da manhã, confirmando a influência do deslocamento matinal.</li>
+											
+											<li><strong>Impacto do Horário de Funcionamento:</strong> Após 18h, as vendas caem drasticamente em Lower Manhattan. Manter a loja aberta até tarde pode não ser financeiramente viável, exigindo uma reavaliação dos horários de operação.</li>
+											<li><strong>Melhores Dias de Venda:</strong> As maiores movimentações ocorrem às segundas e sextas-feiras. Promoções focadas nesses dias podem maximizar o faturamento.</li>
+											<li><strong>Produtos com Baixo Desempenho:</strong> Itens como <strong>Green Bean</strong> e <strong>Sugar-Free Syrup</strong> tiveram vendas inferiores a $2K em seis meses, indicando oportunidade para ajustes no mix de produtos.</li>
+											<li><strong>Diferença Regional no Mix de Produtos:</strong>
+												<ul>
+													<li>Em Lower Manhattan, o <strong>Espresso</strong> lidera as vendas, reforçando a preferência do público por café puro.</li>
+													<li>Em Astoria, o <strong>Chai Tea</strong> é o item mais vendido, mostrando um perfil de consumidor diferente. Essa diferença pode guiar estratégias de marketing e promoções personalizadas por região.</li>
+												</ul>
+											</li>
+										</ul>
+										
+									
+									<h3 class="major">Recomendações para Otimização do Negócio e Próximos Passos</h3>
+									
+										<ul>
+											<li><strong>Ajuste no Horário de Funcionamento:</strong> Fechar algumas unidades mais cedo pode reduzir custos operacionais e melhorar as margens de lucro.</li>
+											
+											<li><strong>Promoções Personalizadas por Região:</strong> Destacar produtos populares em cada unidade pode aumentar as vendas sem a necessidade de descontos generalizados.</li>
+											
+											<li><strong>Aprimoramento do Estoque:</strong> Ajustar a reposição com base nas preferências regionais reduz desperdícios e melhora a experiência do cliente.</li>
+											
+											<li><strong>Investimento no Horário de Pico:</strong> Ampliar o quadro de funcionários entre 7h e 10h pode melhorar o atendimento e evitar filas longas, aumentando a satisfação dos clientes.</li>
+										</ul>
+										
+										<ul>
+											<li>Incorporar esse dashboard na rotina de análise da empresa para acompanhar a evolução dos indicadores.</li>
+											<li>Integrar dados demográficos e de fidelidade para segmentação mais precisa dos clientes.</li>
+											<li>Aplicar modelos preditivos para antecipar tendências e otimizar a gestão de estoque.</li>
+										</ul>
+										
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+				<section id="footer">
+					<div class="inner">
+						<h2 class="major" id="contato">Entre em Contato</h2>
+						<!--<p>Preencha o o formulário e envie sua mensagem.</p>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Nome</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Mensagem</label>
+									<textarea name="message" id="message" rows="4"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Enviar" /></li>
+							</ul>
+						</form>
+					-->
+						<ul class="contact">
+							<li class="icon brands fa-whatsapp"><a href="https://api.whatsapp.com/send?phone=5521995182221" target="_blank">WhatsApp</a></li>
+							<li class="icon solid fa-envelope"><a href="mailto:datascience@cristianethiel.com.br" target="_blank">Email</a></li>
+							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/cristianethiel/" target="_blank">LinkedIn</a></li>
+							<li class="icon brands fa-instagram"><a href="https://www.instagram.com/cristianethiel/" target="_blank">Instagram</a></li>
+							<li class="icon brands fa-youtube"><a href="https://www.youtube.com/channel/UCXxcQu6K8jNsBIZV1xP_kGg?sub_confirmation=1" target="_blank">YouTube</a></li>
+							<li class="icon brands fa-wordpress-simple"><a href="https://cristianethiel.com.br/" target="_blank">Blog</a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Cristiane Thiel. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
